@@ -1,0 +1,13 @@
+{
+  "name": "PushButtonHandler",
+  "description": "Push button handler abstraction",
+  "keywords": "Push button, long press, short press",
+  "authors": [
+    {
+      "name": "Jose Gamaliel Rivera Ibarra",
+      "email": "jgrivera@novutek.com"
+    }
+  ],
+  "version": "0.1.0",
+  "frameworks": "Arduino"
+}

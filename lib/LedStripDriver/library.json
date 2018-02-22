@@ -1,0 +1,13 @@
+{
+  "name": "LedStrip5050Driver",
+  "description": "Simple Led Strip SMD 5050 Driver",
+  "keywords": "Led Strip, RGB, Driver, SMD 5050",
+  "authors": [
+    {
+      "name": "Jose Gamaliel Rivera Ibarra",
+      "email": "jgrivera@novutek.com"
+    }
+  ],
+  "version": "0.1.0",
+  "frameworks": "Arduino"
+}
