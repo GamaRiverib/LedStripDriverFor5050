@@ -15,6 +15,11 @@ BtnHandler::BtnHandler(uint8_t pin, void(*shortFn)(void), void(*longFn)(void))
   this->_long_function_pointer = longFn;
 }
 
+void BtnHandler::activateWith(uint8_t level)
+{
+  this->_activate_with = level;
+}
+
 void BtnHandler::setup(void)
 {
   pinMode(this->_pin, INPUT_PULLUP);
@@ -22,7 +27,7 @@ void BtnHandler::setup(void)
 
 void BtnHandler::loop(void)
 {
-  if(digitalRead(this->_pin) == HIGH)
+  if(digitalRead(this->_pin) == this->_activate_with)
   {
     if(this->_short_pressed == false)
     {

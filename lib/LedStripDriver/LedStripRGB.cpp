@@ -223,6 +223,11 @@ uint32_t LedStripRGB::getColor(void)
   return this->_color;
 }
 
+RGBColor LedStripRGB::getRGBColor(void)
+{
+  return this->hex2rgb(this->_color);
+}
+
 void LedStripRGB::setMode(LedStripRgbMode mode)
 {
   this->_mode = mode;

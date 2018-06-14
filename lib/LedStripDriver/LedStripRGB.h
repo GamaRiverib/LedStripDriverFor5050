@@ -60,6 +60,7 @@ class LedStripRGB
     LedStripState getState(void);
     void setColor(uint32_t);
     uint32_t getColor(void);
+    RGBColor getRGBColor(void);
     void setMode(LedStripRgbMode);
     LedStripRgbMode getMode(void);
     LedStripRgbMode nextMode(void);
